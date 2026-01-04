@@ -29,3 +29,25 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 animatedElements.forEach(el => observer.observe(el));
+
+const btnTopo = document.getElementById("btn-topo");
+
+if (btnTopo) {
+  window.addEventListener("scroll", () => {
+    const scrollAtual = window.scrollY;
+    const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+
+    if (scrollAtual > alturaTotal * 0.5) {
+      btnTopo.classList.add("show");
+    } else {
+      btnTopo.classList.remove("show");
+    }
+  });
+
+  btnTopo.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}

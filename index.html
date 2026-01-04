@@ -15,16 +15,16 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ================= HEADER φ(*￣0￣) ================= -->
     <!-- Serve para apresentar quem é a clínica -->
-    <header class="header animate">
+    <header class="header">
         <div class="container">
             <h1>Dentista</h1>
             <p class="subtitle">Dra. Leila Barros Macedo · CRO 3070</p>
         </div>
     </header>
 
-    <!-- ================= SOBRE ================= -->
+    <!-- ================= SOBRE ○( ＾皿＾)っ Hehehe… ================= -->
     <!-- Aqui quebramos o medo do cliente -->
     <section class="about">
         <div class="container animate">
@@ -55,21 +55,38 @@
     <!-- Cada serviço explicado pelo BENEFÍCIO -->
     <section class="services animate">
         <div class="container">
-            <h2>Nossos Tratamentos</h2>
+            <div class="treatment-intro">
+                <h2>Nossos Tratamentos</h2>
+
+            <div class="treatment-wrapper">
+
+                <div class="treatment-bar" id="treatmentBar">
+                    <a href="#restauracao">Restauração</a>
+                    <a href="#clareamento">Clareamento</a>
+                    <a href="#limpeza">Limpeza</a>
+                    <a href="#extracao">Extração</a>
+                    <a href="#protese">Prótese</a>
+                    <a href="#clinicageral">Clínica Geral</a>
+                    <a href="#openForm">Receber novidades</a>
+                </div>
+
+            </div>
+        </div>
+            
 
             <div class="services-grid">
 
                 <div class="service-highlight">
 
-                    <!-- IMAGEM -->
                     <div class="service-video">
-                        <video
-                            src="mp4/0103(1).mp4"
-                            autoplay muted loop playsinline></video>
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="webm/1.webm" type="video/webm">
+                            <source src="mp4new/1.mp4" type="video/mp4">
+                        </video>
                     </div>
 
                     <!-- CARD MAIOR -->
-                    <div class="service-card large">
+                    <div class="service-card large" id="restauracao">
                         <h3>Restauração Dentária</h3>
 
                         <p>
@@ -79,21 +96,21 @@
                             mais complexos no futuro.
                         </p>
 
-                        <p>
-                            Com uma abordagem cuidadosa e técnica precisa,
-                            a <strong>Dra. Leila Barros Macedo</strong> realiza cada restauração
-                            respeitando a anatomia do dente e a saúde bucal como um todo,
-                            garantindo conforto, durabilidade e um sorriso natural.
-                        </p>
-
                         <ul>
                             <li>✔ Alívio da dor e do desconforto</li>
                             <li>✔ Mastigação segura e eficiente</li>
                             <li>✔ Aparência natural do sorriso</li>
                             <li>✔ Prevenção de problemas maiores</li>
                         </ul>
-                    </div>
 
+                        <p>
+                            Com uma abordagem cuidadosa e técnica precisa,
+                            a <strong>Dra. Leila Barros Macedo</strong> realiza cada restauração
+                            respeitando a anatomia do dente e a saúde bucal como um todo,
+                            garantindo conforto, durabilidade e um sorriso natural.
+                        </p>
+                        
+                    </div>
                 </div>
     </section>
 
@@ -101,10 +118,8 @@
         <div class="container">
             <div class="services-grid">
                 <div class="service-highlight animate">
-
-
                     <!-- CARD MAIOR -->
-                    <div class="service-card large">
+                    <div class="service-card large" id="clareamento">
                         <h3>Clareamento Dental</h3>
 
                         <p>
@@ -112,13 +127,6 @@
                             luminosidade natural do sorriso e se sentir mais confiante
                             em momentos simples do dia a dia, como conversar, sorrir
                             ou tirar fotos.
-                        </p>
-
-                        <p>
-                            Sob avaliação criteriosa da <strong>Dra. Leila Barros Macedo</strong>,
-                            o procedimento é realizado com técnicas seguras, respeitando
-                            a sensibilidade dos dentes e garantindo um resultado harmônico
-                            e saudável.
                         </p>
 
                         <ul>
@@ -129,11 +137,11 @@
                         </ul>
                     </div>
 
-                    <!-- IMAGEM -->
                     <div class="service-video">
-                        <video
-                            src="mp4/0103.mp4"
-                            autoplay muted loop playsinline></video>
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="webm/0103.webm" type="video/webm">
+                            <source src="mp4new/0103.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
 
@@ -143,27 +151,21 @@
             <div class="services-grid">
                 <div class="service-highlight animate">
 
-                    <!-- IMAGEM -->
                     <div class="service-video">
-                        <video
-                            src="mp4/limpeza (1).mp4"
-                            autoplay muted loop playsinline></video>
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="webm/limpeza.webm" type="video/webm">
+                            <source src="mp4new/limpeza.mp4" type="video/mp4">
+                        </video>
                     </div>
 
                     <!-- CARD MAIOR -->
-                    <div class="service-card large">
+                    <div class="service-card large" id="limpeza">
                         <h3>Limpeza Dentária Profissional</h3>
 
                         <p>
                             A limpeza dentária é essencial para manter a saúde bucal em dia.
                             Ela remove placas bacterianas e tártaros que não saem com a escovação
                             comum, prevenindo mau hálito, inflamações gengivais e dores futuras.
-                        </p>
-
-                        <p>
-                            Realizada com cuidado e técnica pela <strong>Dra. Leila Barros Macedo</strong>,
-                            a limpeza ajuda a preservar dentes e gengivas saudáveis,
-                            evitando tratamentos mais complexos no futuro.
                         </p>
 
                         <ul>
@@ -173,7 +175,6 @@
                             <li>✔ Manutenção da saúde bucal</li>
                         </ul>
                     </div>
-
                 </div>
 
     </section>
@@ -182,40 +183,29 @@
             <div class="services-grid">
                 <div class="service-highlight animate">
 
-
-
                     <!-- CARD MAIOR -->
-                    <div class="service-card large">
+                    <div class="service-card large" id="extracao">
                         <h3>Extração Dentária</h3>
 
                         <p>
-                            A extração dentária só é indicada quando realmente não há
-                            possibilidade de recuperação do dente.
-                            O objetivo do procedimento é eliminar a dor,
-                            prevenir infecções e devolver conforto ao paciente.
-                        </p>
-
-                        <p>
-                            Com avaliação criteriosa e técnica segura,
-                            a <strong>Dra. Leila Barros Macedo</strong> realiza cada extração
-                            de forma cuidadosa, minimizando desconfortos
-                            e garantindo uma recuperação tranquila.
+                            A extração dentária é indicada quando o dente está muito comprometido
+                            e não há possibilidade de recuperação no momento.
                         </p>
 
                         <ul>
-                            <li>✔ Alívio imediato da dor</li>
-                            <li>✔ Prevenção de infecções</li>
-                            <li>✔ Procedimento seguro e controlado</li>
-                            <li>✔ Recuperação acompanhada</li>
+                            <li>✔ Indicada em casos de dor intensa</li>
+                            <li>✔ Opção quando o tratamento de canal não é viável</li>
+                            <li>✔ Procedimento seguro e criterioso</li>
+                            <li>✔ Alívio da dor e prevenção de infecções</li>
                         </ul>
                     </div>
-                    <!-- IMAGEM -->
-                    <div class="service-video">
-                        <video
-                            src="mp4/0103(299).mp4"
-                            autoplay muted loop playsinline></video>
-                    </div>
 
+                    <div class="service-video">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="webm/dor.webm" type="video/webm">
+                            <source src="mp4new/dor.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
     </section>
     <section class="services">
@@ -223,39 +213,39 @@
             <div class="services-grid">
                 <div class="service-highlight animate">
 
-                    <!-- IMAGEM -->
                     <div class="service-video">
-                        <video
-                            src="mp4/protese.mp4"
-                            autoplay muted loop playsinline></video>
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="webm/protese.webm" type="video/webm">
+                            <source src="mp4new/protese.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    </div>
+                </div>
 
-                    <!-- CARD MAIOR -->
-                    <div class="service-card large">
-                        <h3>Prótese Dentária</h3>
+                <!-- CARD MAIOR -->
+                <div class="service-card large" id="protese">
+                    <h3>Prótese Dentária</h3>
 
-                        <p>
-                            A perda de um ou mais dentes afeta muito mais do que a aparência.
-                            Ela interfere na mastigação, na fala e na confiança ao sorrir
-                            ou se relacionar com outras pessoas.
-                        </p>
+                    <p>
+                        A perda de um ou mais dentes afeta muito mais do que a aparência.
+                        Ela interfere na mastigação, na fala e na confiança ao sorrir
+                        ou se relacionar com outras pessoas.
+                    </p>
 
-                        <p>
-                            A <strong>Dra. Leila Barros Macedo</strong> avalia cada caso de forma individual,
-                            indicando a prótese mais adequada para devolver função, conforto
-                            e um sorriso natural, respeitando a saúde bucal e o bem-estar do paciente.
-                        </p>
+                    <ul>
+                        <li>✔ Recuperação da mastigação</li>
+                        <li>✔ Melhora da fala e da autoestima</li>
+                        <li>✔ Sorriso com aparência natural</li>
+                        <li>✔ Mais segurança no dia a dia</li>
+                    </ul>
 
-                        <ul>
-                            <li>✔ Recuperação da mastigação</li>
-                            <li>✔ Melhora da fala e da autoestima</li>
-                            <li>✔ Sorriso com aparência natural</li>
-                            <li>✔ Mais segurança no dia a dia</li>
-                        </ul>
-                    </div>
+                    <p>
+                        Com formação sólida e experiência clínica, a <strong>Dra. Leila Barros Macedo</strong>
+                        atua de forma precisa e responsável, avaliando cada caso com atenção e indicando
+                        o tratamento mais adequado para devolver função, estética e bem-estar ao paciente.
+                    </p>
 
                 </div>
+            </div>
 
     </section>
     <section class="services">
@@ -263,9 +253,7 @@
             <div class="services-grid">
                 <div class="service-highlight animate">
 
-
-                    <!-- CARD MAIOR -->
-                    <div class="service-card large">
+                    <div class="service-card large " id="clinicageral">
                         <h3>Clínica Geral</h3>
 
                         <p>
@@ -273,13 +261,6 @@
                             Por meio de uma avaliação completa, é possível identificar
                             pequenos problemas antes que eles se transformem
                             em dores, infecções ou tratamentos mais complexos.
-                        </p>
-
-                        <p>
-                            A <strong>Dra. Leila Barros Macedo</strong> acompanha cada paciente
-                            de forma preventiva e responsável, orientando sobre cuidados,
-                            hábitos e tratamentos necessários para manter a saúde bucal
-                            em equilíbrio ao longo do tempo.
                         </p>
 
                         <ul>
@@ -290,13 +271,12 @@
                         </ul>
                     </div>
 
-                    <!-- IMAGEM -->
                     <div class="service-video">
-                         <video
-                            src="mp4/geral.mp4"
-                            autoplay muted loop playsinline></video>
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="webm/geral.webm" type="video/webm">
+                            <source src="mp4new/geral.mp4" type="video/mp4">
+                        </video>
                     </div>
-
                 </div>
     </section>
 
@@ -350,15 +330,10 @@
             </a>
         </div>
     </section>
-<a 
-    href="https://wa.me/5588997109168"
-    class="floating-button"
-    target="_blank"
-    aria-label="Falar no WhatsApp"
->
-    💬
-</a>
-
+    <a href="https://wa.me/5588997109168" class="floating-button" target="_blank" aria-label="Falar no WhatsApp">
+        💬
+    </a>
+    <button id="btn-topo" aria-label="Voltar ao topo">↑</button>
     <!-- ================= FOOTER ================= -->
     <footer class="footer animate">
         <p>📍 Centro – Em frente ao Boticário</p>
@@ -367,6 +342,7 @@
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -21,6 +21,10 @@ body {
     line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     width: 90%;
     max-width: 1100px;
@@ -28,6 +32,9 @@ body {
     text-align: center;
 }
 
+.treatment-intro {
+    margin: 40px 100px 0;
+}
 /* HEADER */
 .header {
     background: url('img/bannerr.png') no-repeat center center/cover;
@@ -88,6 +95,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
+    
     margin-top: 40px;
 }
 
@@ -313,6 +321,113 @@ body {
     transform: translateY(0);
 }
 
+.treatment-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  position: sticky; /* pode trocar por fixed se quiser okay (～￣▽￣)～*/
+  bottom: 0;
+  background: #ffffff;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  overflow-x: auto;
+  border-top: 1px solid #eee;
+  z-index: 1000;
+  scrollbar-width: none; /* Firefox */
+}
+
+.treatment-bar::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.treatment-bar a {
+  white-space: nowrap;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: #f2f2f2;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.treatment-bar a:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+.treatment-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.treatment-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Wrapper da barra */
+.treatment-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+.treatment-bar::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.treatment-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.treatment-bar {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 12px 44px;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.treatment-bar::-webkit-scrollbar {
+  display: none;
+}
+
+#btn-topo {
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  color: #000000;
+  background-color: #f2f2f23c;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+#btn-topo.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#btn-topo:hover {
+  background: #f2f2f200;
+  transform: translateY(-3px);
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
     .service-highlight {
@@ -323,5 +438,28 @@ body {
     .service-card.large ul {
         text-align: left;
     }
-    
+
+   .treatment-wrapper {
+    display: block;
+     min-height: 60px;
+  }
+
+  .service-highlight {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-card.large ul {
+    text-align: left;
+  }
+
+  .treatment-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .treatment-intro {
+    margin: 20px 20px 0;
+  }
 }
