@@ -51,3 +51,30 @@ if (btnTopo) {
     });
   });
 }
+
+function abrirRota() {
+  const destinoLat = -7.493141593647001;
+  const destinoLng = -38.98512756216187;
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      function (position) {
+        const origemLat = position.coords.latitude;
+        const origemLng = position.coords.longitude;
+
+        const url = `https://www.google.com/maps/dir/?api=1&origin=${origemLat},${origemLng}&destination=${destinoLat},${destinoLng}`;
+
+        window.open(url, '_blank');
+      },
+      function () {
+        // fallback se o usuário negar a localização
+        window.open(
+          `https://www.google.com/maps/dir/?api=1&destination=${destinoLat},${destinoLng}`,
+          '_blank'
+        );
+      }
+    );
+  } else {
+    alert("Seu navegador não suporta localização.");
+  }
+}
